@@ -1,0 +1,31 @@
+-------------------------------------------------------------------
+
+     =========================================================
+     Geant4 - an Object-Oriented Toolkit for Simulation in HEP
+     =========================================================
+
+                             INO-ICAL
+                         ---------------
+
+
+
+	In this example, the detector geometry is similar to ICAL geometry at INO (India-based Neutrino Observatory). The detector geometry consists of 151 layers of iron plates(16 m × 16 m × 5.6 cm) and on each iron plate, there is one  glass plates (16 m × 16 m × 0.001 mm). The iron plates are the target mass and glass plates are the detector elements. The magnetic field is in Y- direction and of 1.5 tesla.  Neutrinos interact with iron plates and produce corresponding leptons whose path will be curved due to magnetic field and glass plates will store their information (position, momentum) when they pass through glass plates.
+
+To run this :
+
+1. Make a build folder : mkdir ino-build
+2. Go to the build folder. : cd ino-build
+3. cmake it : cmake ../INO_ICAL
+4. make it : make -j4
+5. run it : ./ino
+
+To shoot a particle:
+/run/beamOn (no. of events)
+
+To shoot particle without visualization : 
+1. use muon.mac file.
+2. run it : ./ino muon.mac
+
+
+------------------------------------------------------------
+------------------------------------------------------------
